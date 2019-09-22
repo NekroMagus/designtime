@@ -182,3 +182,11 @@ footer {
     transition: 0.3s;
     transform: rotate(360deg);
 }
+
+@media screen and (max-width:780px) {
+.navbar-dark {
+    background: url("../img/header/5.png") no-repeat;
+    background-size: 100% 100%;
+}
+}
+
