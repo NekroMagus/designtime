@@ -25,7 +25,11 @@ li {
 
 .directions {
     margin-top:130px;
-    background: #333 no-repeat;
+    background: linear-gradient(
+            rgba(0, 0, 0, -0.9),
+            rgba(0, 0, 0, -0.9)
+    ),
+            url("../img/thelastback.png") no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
