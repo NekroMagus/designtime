@@ -1,5 +1,4 @@
 html {
-    font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
 }
 
@@ -8,7 +7,8 @@ a {
 }
 
 body {
-    background: #333 no-repeat;
+    font-family: 'Raleway', sans-serif !important;
+    background: white no-repeat;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -22,19 +22,23 @@ li {
     font-size: 20px;
 }
 
+hr {
+    border: none; !important;
+    background-color: #CCCCCC; !important;
+    height: 1px; !important;
+    color:#CCCCCC; !important;
+    margin: 0 5%;
+}
+
 
 .directions {
     margin-top:130px;
-    background: linear-gradient(
-            rgba(0, 0, 0, -0.9),
-            rgba(0, 0, 0, -0.9)
-    ),
-            url("../img/thelastback.png") no-repeat;
+    background: white no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    color: white;
+    color: black;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 50px;
@@ -75,7 +79,7 @@ img {
 }
 
 footer {
-    background-color: #042D3D;
+    background-color: white;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
@@ -108,7 +112,7 @@ footer {
 }
 
 .registration {
-    background-color: #e4606d;
+    background-color: white;
     text-align: center;
 }
 
@@ -118,14 +122,14 @@ footer {
 }
 
 .location {
-    background-color: green;
+    background-color: white;
     text-align: center;
     padding-bottom: 40px;
 }
 
 .date--hack {
     padding-top: 20px;
-    background: #17a2b8;
+    background: white;
     text-align: center;
     padding-bottom: 40px;
 }
@@ -146,7 +150,7 @@ footer {
 }
 
 .button-up  > a > img:hover  {
-    background-color: orange;
+    background-color: white;
     border-radius:25px;
 }
 
@@ -189,8 +193,42 @@ footer {
 
 @media screen and (max-width:780px) {
 .navbar-dark {
-    background: url("../img/header/5.png") no-repeat;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+    ), url("../img/header/5.png") no-repeat;
     background-size: 100% 100%;
 }
 }
+@media screen and (min-width:780px) {
+.navbar-dark {
+    background : linear-gradient(
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)
+    ), url("../img/header/3.png") no-repeat;
+    background-size: 100% auto;
+}
+}
+@media screen and (min-width: 992px) {
+    .web {
+        border-right: 1px solid #CCCCCC ;
+    }
+}
+.inblock {
+    margin:0;
+}
 
+.number {
+    background: linear-gradient(#9933FF, #FF00FF);  /* подробнее про градиенты */
+    -webkit-background-clip: text;  /* подробнее про background-clip */
+    color: transparent;
+    font-size: 50px;
+}
+
+
+
+@media screen and (min-width:992px){
+.hrblock {
+    display: none;
+}
+}
