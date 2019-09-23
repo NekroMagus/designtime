@@ -23,16 +23,20 @@ li {
 }
 
 hr {
-    border: none; !important;
-    background-color: #CCCCCC; !important;
-    height: 1px; !important;
-    color:#CCCCCC; !important;
+    border: none;
+!important;
+    background-color: #CCCCCC;
+!important;
+    height: 1px;
+!important;
+    color: #CCCCCC;
+!important;
     margin: 0 5%;
 }
 
 
 .directions {
-    margin-top:130px;
+    margin-top: 130px;
     background: white no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -45,17 +49,24 @@ hr {
 }
 
 h1 {
+    font-size: 70px;
+    background: linear-gradient(#990066, #660099);
+    -webkit-background-clip: text;
+    color: transparent;
     padding-top: 25px;
     padding-bottom: 50px;
 }
 
 h2 {
-    color: orange;
-    margin-bottom: 25px;
+    background: linear-gradient(#990066, #660099);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 100px;
 }
 
 h3 {
-    color: greenyellow;
+    color: #333333;
+    padding-bottom: 2   0px;
 }
 
 img {
@@ -117,8 +128,20 @@ footer {
 }
 
 .form-button {
+    color: white;
+    background: #990066;
+    margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 0 20px;
+}
+
+.form-button:hover {
+    color: white;
+}
+
+.form-button:active {
+    color: white;
+    background: #CC0099;
 }
 
 .location {
@@ -144,14 +167,15 @@ footer {
     left: 90%;
     z-index: 999;
 }
-.button-up  > a > img  {
+
+.button-up > a > img {
     height: 50px;
     width: 50px;
 }
 
-.button-up  > a > img:hover  {
+.button-up > a > img:hover {
     background-color: white;
-    border-radius:25px;
+    border-radius: 25px;
 }
 
 @media screen and (max-width: 779px) {
@@ -167,7 +191,7 @@ footer {
 }
 
 .nav--logo {
-   margin-top:10px;
+    margin-top: 10px;
     margin-bottom: 10px;
     height: 100px;
     width: 100px;
@@ -179,8 +203,8 @@ footer {
 }
 
 .nav--logo2 {
-    display:none;
-    margin-top:10px;
+    display: none;
+    margin-top: 10px;
     margin-bottom: 10px;
     height: 50px;
     width: 50px;
@@ -191,44 +215,52 @@ footer {
     transform: rotate(360deg);
 }
 
-@media screen and (max-width:780px) {
-.navbar-dark {
-    background: linear-gradient(
-            rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.4)
-    ), url("../img/header/5.png") no-repeat;
-    background-size: 100% 100%;
-}
-}
-@media screen and (min-width:780px) {
-.navbar-dark {
-    background : linear-gradient(
-    rgba(0,0,0,0.4),
-    rgba(0,0,0,0.4)
-    ), url("../img/header/3.png") no-repeat;
-    background-size: 100% auto;
-}
-}
-@media screen and (min-width: 992px) {
-    .web {
-        border-right: 1px solid #CCCCCC ;
+@media screen and (max-width: 780px) {
+    .navbar-dark {
+        background: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.4)
+        ), url("../img/header/5.png") no-repeat;
+        background-size: 100% 100%;
     }
 }
+
+@media screen and (min-width: 780px) {
+    .navbar-dark {
+        background: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.4)
+        ), url("../img/header/3.png") no-repeat;
+        background-size: 100% auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .web {
+        border-right: 1px solid #CCCCCC;
+    }
+}
+
 .inblock {
-    margin:0;
+    margin: 0;
 }
 
 .number {
-    background: linear-gradient(#9933FF, #FF00FF);  /* подробнее про градиенты */
-    -webkit-background-clip: text;  /* подробнее про background-clip */
+    background: linear-gradient(#9933FF, #FF00FF);
+    -webkit-background-clip: text;
     color: transparent;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.number:hover {
+    transition: 0.5s;
     font-size: 50px;
 }
 
 
-
-@media screen and (min-width:992px){
-.hrblock {
-    display: none;
-}
+@media screen and (min-width: 992px) {
+    .hrblock {
+        display: none;
+    }
 }
