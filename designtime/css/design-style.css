@@ -36,7 +36,6 @@ hr {
 
 
 .directions {
-    margin-top: 130px;
     background: white no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -61,7 +60,7 @@ h2 {
     background: linear-gradient(#990066, #660099);
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 100px;
+    font-size: 80px;
 }
 
 h3 {
@@ -70,8 +69,8 @@ h3 {
 }
 
 img {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
 }
 
 .fortext {
@@ -249,13 +248,13 @@ footer {
     background: linear-gradient(#9933FF, #FF00FF);
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 30px;
+    font-size: 20px;
     transition: 0.5s;
 }
 
 .number:hover {
     transition: 0.5s;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 
@@ -263,4 +262,87 @@ footer {
     .hrblock {
         display: none;
     }
+}
+
+.links {
+    height: 200px;
+    width: 200px;
+}
+
+.link-mobile {
+    width: 150px;
+}
+
+.menu-right {
+    background: linear-gradient(#990066, #660099);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 0 5px 0 5px;
+    margin: 5px;
+    width: 100%;
+    border-bottom: 1px solid #990066;
+    text-align: center;
+}
+
+.menu-right:hover {
+    background: linear-gradient(#990066, #660099);
+    -webkit-background-clip: text;
+    box-shadow: 0 0 20px #bc2a8d;
+    color: transparent;
+}
+
+
+.menu {
+    border: 1px solid #990066;
+    border-radius: 40px;
+    background-color: rgba(153, 0, 102, 0.2);
+    position: fixed;
+    left: 0;
+    top: 15%;
+    z-index: 99;
+    width: 20%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    transform: translateX(600%);
+}
+
+.menu_active {
+    transform: translateX(400%);
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+}
+
+.menu-list a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.menu-btn {
+    z-index: 999;
+    background: url("../img/menu.svg") no-repeat;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 93%;
+    top: 5%;
+}
+
+.content {
+    transition: 0.5s;
+    position: relative;
+    z-index: 0;
+}
+
+.content_active {
+    transform: translateX(400%);
 }

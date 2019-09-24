@@ -15,40 +15,54 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<!--<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">-->
+<!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"-->
+<!--            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
 
-    <div class="collapse navbar-collapse ml-auto text-center justify-content-center align-items-center " id="navbarsExampleDefault">
-       <span>
-           <img class="nav--logo " src="../img/thelast.png" alt=""/>
-           <img class="nav--logo2" src="../img/thelast.png" alt=""/>
-       </span>
+<!--    <div class="collapse navbar-collapse ml-auto text-center justify-content-center align-items-center " id="navbarsExampleDefault">-->
+<!--       <span>-->
+<!--           <img class="nav&#45;&#45;logo " src="../img/thelast.png" alt=""/>-->
+<!--           <img class="nav&#45;&#45;logo2" src="../img/thelast.png" alt=""/>-->
+<!--       </span>-->
 
-        <ul class="navbar-nav ml-auto text-center justify-content-center align-items-center w-100">
-            <li class="nav-item active">
-                <a class="nav-link web" href="#directions">Направления <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link web" href="#date-hack">Когда и где</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link web" href="#registration">Регистрация</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#partners">Партнеры</a>
-            </li>
-        </ul>
-    </div>
+<!--        <ul class="navbar-nav ml-auto text-center justify-content-center align-items-center w-100">-->
+<!--            <li class="nav-item active">-->
+<!--                <a class="nav-link web" href="#directions">Направления <span class="sr-only">(current)</span></a>-->
+<!--            </li>-->
+<!--            <li class="nav-item active">-->
+<!--                <a class="nav-link web" href="#date-hack">Когда и где</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item active">-->
+<!--                <a class="nav-link web" href="#registration">Регистрация</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item active">-->
+<!--                <a class="nav-link" href="#partners">Партнеры</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</nav>-->
+
+<a href="#" class="menu-btn"></a>
+<div class="menu">
+<nav class="menu-list">
+    <a class="menu-right" href="#directions">Направления</a>
+    <a class="menu-right" href="#date-hack">Когда</a>
+    <a class="menu-right" href="#registration">Регистрация</a>
+    <a class="menu-right" href="#partners">Партнеры</a>
 </nav>
+</div>
+
+
+
+
 
 <section class="directions">
     <a name="directions"></a>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-sm-9">
+            <div class="col-sm-12">
                 <h1>Направления DesignTime!</h1>
             </div>
             <div class="col-sm-6">
@@ -58,21 +72,27 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-12 web">
+                <img class="links" src="../img/link/web.png"/>
                 <h2>Web</h2>
                 <p class="number">Поучаствуйте в Web разработке, прояви себя (текст придумать) </p>
             </div>
             <div class="col-lg-6 col-md-12">
                 <hr class = "hrblock">
+                <img class="links link-mobile" src="../img/link/mobile.png"/>
                 <h2>Mobile</h2>
                 <p class="number"> Поучаствуйте в Mobile разработке, прояви себя (текст придумать)</p>
             </div>
             <div class="col-lg-6 col-md-12 web">
                 <hr class="inblock">
+                <br>
+                <img class="links" src="../img/link/motion.png"/>
                 <h2>Motion</h2>
                 <p class="number">Поучаствуйте в Motion разработке, прояви себя (текст придумать)</p>
             </div>
             <div class="col-lg-6 col-md-12">
                 <hr class="inblock" >
+                <br>
+                <img class="links" src="../img/link/graphic.png"/>
                 <h2>Graphic</h2>
                 <p class="number">Поучаствуйте в Graphic разработке, прояви себя (текст придумать)</p>
             </div>
@@ -182,9 +202,7 @@
 
 <nav class="button-up"><a href="#"><img src="../img/up_button.png"/></a></nav>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
