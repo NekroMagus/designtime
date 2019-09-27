@@ -10,6 +10,7 @@
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sniglet&display=swap" rel="stylesheet">
+    <link href="../img/new/16746.otf">
     <link rel="stylesheet" href="../css/design-style.css"/>
     <title>Design Time</title>
 </head>
@@ -44,19 +45,38 @@
 <!--    </div>-->
 <!--</nav>-->
 
-<a href="#" class="menu-btn"></a>
+<a id="image" href="#" class="menu-btn"><img class="menu-img" src="../img/new/bar.png" onClick="imgsrc()"/></a>
+
+
+
 <div class="menu">
-<nav class="menu-list">
-    <a class="menu-right" href="#directions">Направления</a>
-    <a class="menu-right" href="#date-hack">Когда</a>
-    <a class="menu-right" href="#registration">Регистрация</a>
-    <a class="menu-right" href="#partners">Партнеры</a>
-</nav>
+    <nav class="menu-list">
+        <a class="menu-right" href="#directions">Направления</a>
+        <a class="menu-right" href="#footer">Контакты</a>
+        <a class="menu-right" href="#directions">Направления</a>
+        <a class="menu-right" href="#registration">Регистрация</a>
+        <a class="menu-right" href="#partners">Партнеры</a>
+    </nav>
 </div>
 
-
-
-
+<section class="header">
+    <nav class="navbar navbar-expand">
+    <div class="row">
+        <div class="main-menu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item navbar-nav"><a href="#" class="navbar-brand">Главная</a></li>
+                <li class="nav-item navbar-nav"><a href="#footer" class="navbar-brand">Контакты</a></li>
+                <li class="nav-item navbar-nav"><a href="#directions" class="navbar-brand">Направления</a></li>
+                <li class="nav-item navbar-nav"><a href="#registration" class="navbar-brand">Регистрация</a></li>
+                <li class="nav-item navbar-nav"><a href="#partners" class="navbar-brand">Партнеры</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <div class="row justify-content-center">
+        <img class=" menu-logo" src="../img/new/designtimelogo.png"/>
+    </div>
+</section>
 
 <section class="directions">
     <a name="directions"></a>
@@ -66,42 +86,58 @@
                 <h1>Направления DesignTime!</h1>
             </div>
             <div class="col-sm-6">
-                <h3>По направлениям хакатона формируются кейсы... Бла бла бла</h3>
+                <h3>По 4 направлениям хакатона нашими партнерами формируются задачи, которые нужно реализовать в течение
+                    24 часов. Каждая категория Имеет свои призовые места.</h3>
             </div>
 
         </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-12 web">
-                <img class="links" src="../img/link/web.png"/>
+        <div class="row align-items-center marg">
+            <div class="col-lg-5 col-md-12">
+                <img class="links" src="../img/new/wd.png"/>
+            </div>
+            <div class="col-lg-7 col-md-12">
                 <h2>Web</h2>
-                <p class="number">Поучаствуйте в Web разработке, прояви себя (текст придумать) </p>
+                <p class="number">Не выносишь ужасного UI, когда заходишь на сайты? Давай перевернем индустрию
+                    Web-дизайна! Приходи и займи призовое место за действительно крутой сайт для нашего партнера!</p>
             </div>
-            <div class="col-lg-6 col-md-12">
-                <hr class = "hrblock">
-                <img class="links link-mobile" src="../img/link/mobile.png"/>
-                <h2>Mobile</h2>
-                <p class="number"> Поучаствуйте в Mobile разработке, прояви себя (текст придумать)</p>
+            <div class="row align-items-center marg">
+                <div class="col-lg-7 col-md-12">
+                    <h2>Mobile</h2>
+                    <p class="number">Считаешь себя гуру UI/UX? Давай проверим на что ты способен! Подавай заявку и
+                        докажи, что ты лучший!</p>
+                </div>
+                <div class="col-lg-5 col-md-12 marg">
+                    <hr class="hrblock">
+                    <img class="links link-mobile" src="../img/new/ui.png"/>
+                </div>
             </div>
-            <div class="col-lg-6 col-md-12 web">
-                <hr class="inblock">
-                <br>
-                <img class="links" src="../img/link/motion.png"/>
-                <h2>Motion</h2>
-                <p class="number">Поучаствуйте в Motion разработке, прояви себя (текст придумать)</p>
+            <div class="row align-items-center marg">
+                <div class="col-lg-5 col-md-12">
+                    <img class="links" src="../img/new/md.png"/>
+                </div>
+                <div class="col-lg-7 col-md-12">
+                    <h2>Motion</h2>
+                    <p class="number">Разработай лучший ролик вместе с маркетологами нашего партнера и получи звание
+                        лучшего
+                        Motion-дизайнера этой осени!</p>
+                </div>
             </div>
-            <div class="col-lg-6 col-md-12">
-                <hr class="inblock" >
-                <br>
-                <img class="links" src="../img/link/graphic.png"/>
-                <h2>Graphic</h2>
-                <p class="number">Поучаствуйте в Graphic разработке, прояви себя (текст придумать)</p>
+            <div class="row align-items-center marg">
+                <div class="col-lg-7 col-md-12">
+                    <h2>Graphic</h2>
+                    <p class="number">Смотря на оформления крупных компаний, считаешь их дизайнеров халтурщиками?
+                        Регистрируйся и докажи, что можешь лучше! </p>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <img class="links" src="../img/new/gd.png"/>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<div class ="container">
-<hr>
+<div class="container">
+    <hr>
 </div>
 
 <section class="date--hack">
@@ -110,31 +146,32 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <h1>Когда и где</h1>
-                <p class="number">16-17 Ноября</p>
+                <p>16-17 Ноября</p>
                 <h3>В течение 24 часов Вам предстоит бороться за призовые места</h3>
+                <h3>Место проведения тщательно уточняется</h3>
             </div>
         </div>
     </div>
 </section>
 
-<section class="location">
-    <a name="location"></a>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12">
-                <p class="number">Место проведения тщательно уточняется, а пока, вот пече... миникарта)</p>
-                <iframe class="mini-map"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8980.806158459063!2d37.6182683!3d55.7550011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506b52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1569164822771!5m2!1sru!2sru"
-                        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                <iframe class="big-map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6263.823561863622!2d37.6182683205156!3d55.75500109502187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506b52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1569158970169!5m2!1sru!2sru"
-                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
-        </div>
-    </div>
-</section>
+<!--<section class="location">-->
+<!--    <a name="location"></a>-->
+<!--    <div class="container">-->
+<!--        <div class="row justify-content-center">-->
+<!--            <div class="col-md-12">-->
+<!--                <p>Место проведения тщательно уточняется, а пока, вот пече... миникарта)</p>-->
+<!--                <iframe class="mini-map"-->
+<!--                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8980.806158459063!2d37.6182683!3d55.7550011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506b52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1569164822771!5m2!1sru!2sru"-->
+<!--                        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>-->
+<!--                <iframe class="big-map"-->
+<!--                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6263.823561863622!2d37.6182683205156!3d55.75500109502187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506b52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1569158970169!5m2!1sru!2sru"-->
+<!--                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
-<div class ="container">
+<div class="container">
     <hr>
 </div>
 
@@ -152,7 +189,7 @@
     </div>
 </section>
 
-<div class ="container">
+<div class="container">
     <hr>
 </div>
 
@@ -160,36 +197,45 @@
     <a name="partners"></a>
     <div class="container">
         <h1>Наши партнеры</h1>
-        <div class="row justify-content-center">
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners--img">
-                <img src="../img/partners/1.png"/>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners--img">
-                <img src="../img/partners/2.png"/>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners--img">
-                <img src="../img/partners/3.jpg"/>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners--img">
-                <img src="../img/partners/4.png"/>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners--img">
-                <img src="../img/partners/5.jpg"/>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners--img">
-                <img src="../img/partners/6.png"/>
-            </div>
-        </div>
+        <!--        <div class="row justify-content-center">-->
+        <!--            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners&#45;&#45;img">-->
+        <!--                <img src="../img/partners/1.png"/>-->
+        <!--            </div>-->
+        <!--            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners&#45;&#45;img">-->
+        <!--                <img src="../img/partners/2.png"/>-->
+        <!--            </div>-->
+        <!--            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners&#45;&#45;img">-->
+        <!--                <img src="../img/partners/3.jpg"/>-->
+        <!--            </div>-->
+        <!--            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners&#45;&#45;img">-->
+        <!--                <img src="../img/partners/4.png"/>-->
+        <!--            </div>-->
+        <!--            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners&#45;&#45;img">-->
+        <!--                <img src="../img/partners/5.jpg"/>-->
+        <!--            </div>-->
+        <!--            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners&#45;&#45;img">-->
+        <!--                <img src="../img/partners/6.png"/>-->
+        <!--            </div>-->
+        <!--        </div>-->
     </div>
 </section>
 
-<div class ="container">
+<div class="container">
     <hr>
 </div>
 
+<a name="footer"></a>
 <footer>
     <div class="footer--logo">
         <a href="#"><img class="footer--logo--img" src="../img/thelast.png" alt=""/></a>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>Контакты:</p>
+            <p>info@designtime.tech</p>
+            <p> +79633265037</p>
+        </div>
 
     </div>
     <div class="footer--navbar--social ">
@@ -212,5 +258,17 @@
 <script src="https://use.fontawesome.com/96928ca8ce.js"></script>
 <script src="../js/scroll-header.js"></script>
 
+<script>
+    var i=0;
+    var image=document.getElementById("image");
+    var imgs=new Array('../img/new/bar.png', '../img/new/barw.png');
+    var j=imgs.length;
+    function imgsrc(){
+        if (i!=(j-1))
+        {i++;}
+
+        image.src=imgs[i];
+    }
+</script>
 </body>
 </html>
